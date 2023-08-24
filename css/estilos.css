@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #ED213A;  /* fallback for old browsers */
+    background: linear-gradient(to right, #000000, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #000000, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    min-height: 100vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header {
+    background-color: #ffffff;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 20px 0;
+}
+.card {
+    width: 500;
+    height: 500;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 10px auto;
+}
+.contenedorImagen img {
+  text-align: start;
+    width: 70%;
+    animation: animacionCorazon ease-in-out 2s infinite alternate;
+}
+.contenedorImagen2 img {
+    text-align: start;
+    width: 70%;
+    animation: animacionCorazon ease-in-out 2s infinite alternate;
+}
+.contenedorImagen3 img {
+    justify-items: start;
+      width: 70%;
+      animation: animacionCorazon ease-in-out 2s infinite alternate;
+  }
+  .contenedorImagen4 img {
+    justify-items: start;
+      width: 70%;
+      animation: animacionCorazon ease-in-out 2s infinite alternate;
+  }
+  .contenedorImagen5 img {
+    justify-items: start;
+      width: 70%;
+      animation: animacionCorazon ease-in-out 2s infinite alternate;
+  }
+@keyframes animacionCorazon {
+    0% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(10%);
+    }
+}
+.contenedorTexto {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    padding: 20px;
+}
+
+@media screen and (min-width:768px){
+    .card {
+        width: 100%;
+        max-width: 1000px;
+    }
+    .contenedorImagen img {
+        width: 20%;
+    }
+}
